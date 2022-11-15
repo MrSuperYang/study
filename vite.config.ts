@@ -12,6 +12,7 @@ export default ({ command, mode }: ConfigEnv): UserConfigExport => {
     base: mode === 'preview' ? homepage : '/',
     publicDir: './public',
     server: {
+      host: '0.0.0.0',
       port: 6677
     },
     resolve: {
